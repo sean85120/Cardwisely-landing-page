@@ -1,7 +1,8 @@
 import { readFileSync, existsSync, statSync, readdirSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = new URL("..", import.meta.url).pathname;
+const root = fileURLToPath(new URL("..", import.meta.url));
 const skip = new Set(["node_modules", ".git", ".github", ".husky", "scripts"]);
 
 function htmlFiles(dir) {

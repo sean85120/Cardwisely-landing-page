@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Page not found | Cardwisely</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0f1f45" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        font-family:
+          "Geist",
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #f0eadd;
+        background:
+          radial-gradient(
+            900px 600px at 80% -10%,
+            rgba(46, 78, 168, 0.5),
+            transparent 62%
+          ),
+          #081129;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        display: grid;
+        place-items: center;
+        padding: 48px 20px;
+      }
+
+      .card {
+        position: relative;
+        width: min(100%, 520px);
+        padding: clamp(36px, 8vw, 64px) clamp(24px, 6vw, 56px);
+        border: 1px solid #c9a45c;
+        border-radius: 22px;
+        background: linear-gradient(180deg, #13254f, #0f1f45);
+        text-align: center;
+        transform: rotate(-1.5deg);
+        box-shadow: 0 50px 100px -40px rgba(0, 0, 0, 0.85);
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 7px;
+        border: 1px solid rgba(216, 184, 120, 0.4);
+        border-radius: 16px;
+        pointer-events: none;
+      }
+
+      .code {
+        font-family: "Geist Mono", ui-monospace, Menlo, monospace;
+        font-size: 0.74rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #e6cd97;
+      }
+
+      h1 {
+        margin: 14px 0 0;
+        font-family: "Instrument Serif", Georgia, serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: clamp(2.3rem, 8vw, 3.4rem);
+        line-height: 1.05;
+        color: #e6cd97;
+      }
+
+      p {
+        margin: 16px 0 0;
+        color: #b1bad0;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        margin-top: 28px;
+        padding: 12px 26px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #ecd6a4, #c9a45c);
+        color: #0b1736;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      a:focus-visible {
+        outline: 2px solid #e6cd97;
+        outline-offset: 3px;
+      }
+
+      footer {
+        padding: 24px 20px 32px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #b1bad0;
+      }
+
+      footer a {
+        color: inherit;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        color: #e6cd97;
+      }
+
+      footer p {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <p class="code">Error 404</p>
+        <h1>This card is not in the stack.</h1>
+        <p>The page you were looking for does not exist or has moved.</p>
+        <a class="btn" href="/">Back to Cardwisely</a>
+      </div>
+    </main>
+    <footer>
+      <nav aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+      <p>&copy; 2026 Kairos AI</p>
+    </footer>
+  </body>
+</html>

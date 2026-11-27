@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Cardwisely: Scan and sort business cards</title>
+    <meta
+      name="description"
+      content="Cardwisely turns the business cards you collect into a table you can search. Scan in English and Chinese, sort into groups, export CSV. Private by design, on iPhone."
+    />
+    <meta name="theme-color" content="#0f1f45" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cardwisely" />
+    <meta
+      property="og:title"
+      content="Cardwisely: Scan and sort business cards"
+    />
+    <meta
+      property="og:description"
+      content="Cardwisely turns the business cards you collect into a table you can search."
+    />
+    <meta property="og:image" content="assets/icon-512.png" />
+    <meta
+      property="og:image:alt"
+      content="Cardwisely app icon: gold script lettering inside a gold card frame on navy"
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@500&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="./" aria-label="Cardwisely home">
+          <img src="assets/icon-512.png" alt="" width="34" height="34" />
+          <span>Cardwisely</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#pricing">Pricing</a>
+          <a class="nav-cta" href="#get">Coming soon</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Scan and sort business cards</p>
+            <h1 id="hero-title">
+              Scan the card. <em>Find the person later.</em>
+            </h1>
+            <p class="lede">
+              Cardwisely turns the business cards you collect into a table you
+              can search.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#get"
+                >Coming soon to the App Store</a
+              >
+              <a class="btn btn-ghost" href="#how">See how it works</a>
+            </div>
+            <p class="hero-meta">
+              <span>iPhone</span><span>iOS 26 or later</span
+              ><span>English and <span lang="zh-Hant">繁體中文</span></span>
+            </p>
+          </div>
+
+          <div class="stage-wrap">
+            <div class="stage" data-stage aria-hidden="true">
+              <div class="scanzone">
+                <div class="guide"><i></i><i></i><i></i><i></i></div>
+                <div class="bc" data-card data-skin="polaris">
+                  <div class="bc-face">
+                    <div class="bc-top">
+                      <span class="bc-mark"></span>
+                      <span class="cl" data-f="company"
+                        >Polaris Design Studio</span
+                      >
+                    </div>
+                    <div class="bc-bottom">
+                      <div class="bc-names">
+                        <span class="cl" data-f="name" lang="zh-Hant"
+                          >陳怡君</span
+                        >
+                        <span class="cl" data-f="alt">Grace Chen</span>
+                      </div>
+                      <span class="cl" data-f="title">Creative Director</span>
+                      <div class="bc-contact">
+                        <span class="cl" data-f="mobile">+886 912 345 678</span>
+                        <span class="cl" data-f="email"
+                          >grace@polaris.example</span
+                        >
+                      </div>
+                    </div>
+                    <div class="beam"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sheet">
+                <div class="sheet-head">
+                  <span
+                    >New card<span class="dots" data-dots
+                      ><i class="is-on"></i><i></i><i></i></span
+                  ></span>
+                  <span class="sheet-status" data-status>6 fields filled</span>
+                </div>
+                <div class="row">
+                  <span class="k">Name</span
+                  ><span class="d"
+                    ><span class="v" data-v="name" lang="zh-Hant"
+                      >陳怡君</span
+                    ></span
+                  >
+                </div>
+                <div class="row">
+                  <span class="k">Name (alt)</span
+                  ><span class="d"
+                    ><span class="v" data-v="alt">Grace Chen</span></span
+                  >
+                </div>
+                <div class="row">
+                  <span class="k">Company</span
+                  ><span class="d"
+                    ><span class="v" data-v="company"
+                      >Polaris Design Studio</span
+                    ></span
+                  >
+                </div>
+                <div class="row">
+                  <span class="k">Title</span
+                  ><span class="d"
+                    ><span class="v" data-v="title"
+                      >Creative Director</span
+                    ></span
+                  >
+                </div>
+                <div class="row">
+                  <span class="k">Mobile</span
+                  ><span class="d"
+                    ><span class="v" data-v="mobile"
+                      >+886 912 345 678</span
+                    ></span
+                  >
+                </div>
+                <div class="row">
+                  <span class="k">Email</span
+                  ><span class="d"
+                    ><span class="v" data-v="email"
+                      >grace@polaris.example</span
+                    ></span
+                  >
+                </div>
+                <div class="row">
+                  <span class="k">Group</span
+                  ><span class="d"
+                    ><span class="chip" data-chip data-group="partners"
+                      ><i></i><span data-chip-label>Partners</span></span
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="sr-only">
+              Illustration: a bilingual business card for Grace Chen of Polaris
+              Design Studio is scanned. Her name, company, title, mobile number
+              and email move into the rows of a new contact, and the card is
+              filed in the Partners group.
+            </p>
+            <div class="stage-foot">
+              <button
+                class="stage-toggle"
+                type="button"
+                data-stage-toggle
+                hidden
+              >
+                <span>Pause animation</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="facts" aria-label="What Cardwisely reads">
+        <div class="wrap">
+          <ul>
+            <li><b>Both sides</b>Reads the front and the back of a card</li>
+            <li><b>Two languages</b>Reads English and Chinese</li>
+            <li><b>QR codes</b>Contact codes in vCard and MeCard format</li>
+            <li>
+              <b>On device</b>Text is read on your iPhone with Apple Vision
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="how" aria-labelledby="how-title">
+        <div class="wrap">
+          <div class="sec-head" data-reveal>
+            <p class="eyebrow">01 / How it works</p>
+            <h2 id="how-title">
+              From a stack of cards to <em>tidy rows</em>, in three steps.
+            </h2>
+          </div>
+          <ol class="steps">
+            <li class="step" data-reveal>
+              <div class="phone phone-bare">
+                <img
+                  src="assets/screens/02-scan.webp"
+                  alt="Camera screen with a guide frame and the hint: Place the card inside the frame"
+                  width="660"
+                  height="1434"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="step-text">
+                <span class="step-no">01</span>
+                <h3>Scan</h3>
+                <p>
+                  Line a card up inside the camera's guide frame, or pick photos
+                  you already have. Cardwisely reads the front and the back, in
+                  English and Chinese.
+                </p>
+              </div>
+            </li>
+            <li class="step" data-reveal>
+              <div class="phone">
+                <img
+                  src="assets/screens/03-review.webp"
+                  alt="New card form filled in from a scanned card: name, alternate name, company, title, mobile and phone"
+                  width="660"
+                  height="1434"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="step-text">
+                <span class="step-no">02</span>
+                <h3>Review</h3>
+                <p>
+                  It fills in name, company, title, phone, email, website and
+                  address. Contact QR codes fill in what the text missed. You
+                  review before saving, and you can tap a line of text to move
+                  it into the right field.
+                </p>
+              </div>
+            </li>
+            <li class="step" data-reveal>
+              <div class="phone">
+                <img
+                  src="assets/screens/04-detail.webp"
+                  alt="Card detail in Chinese and English with a group, Add to Contacts, mobile, phone, email, website and address rows"
+                  width="660"
+                  height="1434"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="step-text">
+                <span class="step-no">03</span>
+                <h3>Sort</h3>
+                <p>
+                  Put the card in a group and it joins the rest of your table.
+                  From the card you can call, email, or open the address in
+                  Maps.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <div class="wrap">
+          <div class="sec-head" data-reveal>
+            <p class="eyebrow">02 / Sort and find</p>
+            <h2 id="features-title">
+              Built for the week <em>after</em> the conference.
+            </h2>
+            <p>
+              Collecting cards is the easy part. These are the tools for finding
+              the right person later.
+            </p>
+          </div>
+          <div class="ledger" data-reveal>
+            <div class="ledger-head" aria-hidden="true">
+              <span>No.</span><span>Feature</span><span>What it does</span>
+            </div>
+            <ol>
+              <li>
+                <span class="n" aria-hidden="true">01</span>
+                <h3>Groups</h3>
+                <p>
+                  Start with VCs, Partners, Potential clients, Might help in
+                  future and Not relevant now. Rename them, add your own, and
+                  put them in the order you want.
+                </p>
+              </li>
+              <li>
+                <span class="n" aria-hidden="true">02</span>
+                <h3>Search and filter</h3>
+                <p>
+                  Search by name, company, email or phone. Filter by group, or
+                  by country or region.
+                </p>
+              </li>
+              <li>
+                <span class="n" aria-hidden="true">03</span>
+                <h3>Bulk edits</h3>
+                <p>
+                  Select as many cards as you like, then move or delete them at
+                  once.
+                </p>
+              </li>
+              <li>
+                <span class="n" aria-hidden="true">04</span>
+                <h3>Follow-ups</h3>
+                <p>See which new contacts are not in Contacts yet.</p>
+              </li>
+              <li>
+                <span class="n" aria-hidden="true">05</span>
+                <h3>Add to Contacts</h3>
+                <p>
+                  One tap opens the standard new-contact screen. You confirm the
+                  contact; the app never reads your address book.
+                </p>
+              </li>
+              <li>
+                <span class="n" aria-hidden="true">06</span>
+                <h3>Export CSV</h3>
+                <p>
+                  Export all cards, the current results, or one group. The file
+                  opens in Excel, Numbers and Google Sheets.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="wrap gallery-head" data-reveal>
+          <h3 id="gallery-title">A look inside</h3>
+          <span aria-hidden="true">Scroll sideways</span>
+        </div>
+        <div
+          class="gallery"
+          role="region"
+          aria-labelledby="gallery-title"
+          tabindex="0"
+        >
+          <figure>
+            <div class="phone">
+              <img
+                src="assets/screens/01-home.webp"
+                alt="Overview dashboard showing cards collected, this month, countries, in Contacts, companies and a chart of the last 8 weeks"
+                width="660"
+                height="1434"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption><b>Overview</b>Your collection at a glance</figcaption>
+          </figure>
+          <figure>
+            <div class="phone">
+              <img
+                src="assets/screens/05-search.webp"
+                alt="Cards list searched for Acme, showing two matching cards and group filter chips"
+                width="660"
+                height="1434"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <b>Search</b>By name, company, email or phone
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="phone">
+              <img
+                src="assets/screens/07-groups.webp"
+                alt="Cards list in selection mode with six cards selected, plus move and delete buttons"
+                width="660"
+                height="1434"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <b>Groups</b>Select many, then move or delete
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="phone">
+              <img
+                src="assets/screens/06-follow-ups.webp"
+                alt="Overview section titled Not in Contacts yet, listing three cards with Add buttons, above recently added cards and groups"
+                width="660"
+                height="1434"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption><b>Follow-ups</b>Who is not in Contacts yet</figcaption>
+          </figure>
+          <figure>
+            <div class="phone">
+              <img
+                src="assets/screens/08-contacts.webp"
+                alt="The standard iOS New Contact screen, filled in with a name from a card"
+                width="660"
+                height="1434"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <b>Add to Contacts</b>The standard screen; you confirm
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="phone">
+              <img
+                src="assets/screens/09-export.webp"
+                alt="Export CSV sheet with choices for current results, all cards, or a single group"
+                width="660"
+                height="1434"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <b>Export CSV</b>All cards, current results or one group
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="privacy" aria-labelledby="privacy-title">
+        <div class="wrap">
+          <div class="vault" data-reveal>
+            <div class="vault-body">
+              <p class="eyebrow">03 / Privacy</p>
+              <h2 class="display" id="privacy-title">
+                Private <em>by design.</em>
+              </h2>
+              <p class="label">
+                <small>App Store privacy label</small
+                ><strong>Data Not Collected</strong>
+              </p>
+              <ul class="checks">
+                <li>
+                  <b>Stays on your iPhone</b>Your cards and photos stay on your
+                  iPhone. Sync is optional, and goes to your own private iCloud.
+                </li>
+                <li>
+                  <b>Nothing in between</b>No account, no server of ours, no
+                  tracking and no ads.
+                </li>
+                <li>
+                  <b>Read on device</b>Text is read on device with Apple Vision.
+                  With Apple Intelligence, an on-device model tidies names,
+                  companies and titles.
+                </li>
+                <li><b>Yours to delete</b>Delete all data at any time.</li>
+              </ul>
+              <a class="text-link" href="privacy/">Read the privacy policy</a>
+            </div>
+            <div class="vault-phone">
+              <div class="phone">
+                <img
+                  src="assets/screens/10-privacy.webp"
+                  alt="Settings screen with home region, manage groups, a Sync with iCloud switch that is off, and a note that the on-device model is ready"
+                  width="660"
+                  height="1434"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing" aria-labelledby="pricing-title">
+        <div class="wrap">
+          <div class="sec-head" data-reveal>
+            <p class="eyebrow">04 / Pricing</p>
+            <h2 id="pricing-title">
+              Free to start. One upgrade, <em>two ways to pay.</em>
+            </h2>
+          </div>
+          <div class="plans" data-reveal>
+            <article class="plan">
+              <span class="tag">Free</span>
+              <h3>Free download</h3>
+              <ul>
+                <li><b>First 10 scanned cards</b> are free</li>
+                <li><b>Adding cards by hand</b> is always free</li>
+              </ul>
+            </article>
+            <article class="plan plan-pro">
+              <span class="tag">Unlimited scans</span>
+              <h3>Cardwisely Pro</h3>
+              <div class="prices">
+                <p class="price">
+                  <span class="amt"><small>TWD</small>30</span
+                  ><span class="per">per month</span>
+                </p>
+                <p class="price">
+                  <span class="amt"><small>TWD</small>300</span
+                  ><span class="per">once, for life</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <p class="fine" data-reveal>
+            The monthly subscription renews automatically unless it is cancelled
+            at least 24 hours before the end of the current period. Manage or
+            cancel it in Settings &gt; Apple Account &gt; Subscriptions. See the
+            <a href="terms/">terms</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="get" id="get" aria-labelledby="get-title">
+        <div class="wrap">
+          <img
+            src="assets/icon-512.png"
+            alt="Cardwisely app icon"
+            width="104"
+            height="104"
+            loading="lazy"
+            decoding="async"
+          />
+          <h2 class="display" id="get-title">
+            Coming soon to <em>the App Store.</em>
+          </h2>
+          <p>
+            Cardwisely is for iPhone and needs iOS 26 or later. It is available
+            in English and Traditional Chinese.
+          </p>
+          <a class="btn btn-gold" data-appstore href="#"
+            >Coming soon to the App Store</a
+          >
+          <p class="hero-meta">
+            <span>Published by Kairos AI</span
+            ><span
+              >Questions:
+              <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a></span
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="./" aria-current="page">Home</a></li>
+            <li><a href="privacy/">Privacy</a></li>
+            <li><a href="terms/">Terms</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2026 Kairos AI</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
